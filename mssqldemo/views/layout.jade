@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Exprees With MSSQL
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+  body
+    h1 Express With MSSQL - #{route}
+    p template by jade (Pug)
+
+    case route
+    when 'home': block home
+    when 'edit': block edit
+    when 'add': block add
+    default: block home
+ 
